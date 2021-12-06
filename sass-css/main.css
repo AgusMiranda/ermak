@@ -1,8 +1,10 @@
+/************BODY PREDETERMINADO************/
 body {
   margin-right: 0px;
   background-color: #3478a5;
 }
 
+/***header valores***/
 header {
   background-color: white;
 }
@@ -18,18 +20,14 @@ nav .nav-link {
   color: black;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
-  background-color: rgba(150, 148, 148, 0.562) !important;
+.divPrueba {
+  margin-right: 50px;
+}
+
+/****valores del carousel******/
+.d-block {
+  width: 100%;
+  max-height: 460px;
 }
 
 .presentacion {
@@ -45,10 +43,7 @@ footer {
   margin-top: 30px;
 }
 
-.divPrueba {
-  margin-right: 50px;
-}
-
+/*******seccion de presentacion**********/
 .cartasMaquinas {
   margin-top: 100px;
   margin-bottom: 200px;
@@ -71,9 +66,19 @@ footer {
   margin: 30px;
 }
 
-.d-block {
-  width: 100%;
-  max-height: 460px;
+/*******valores del footer**********/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.747) !important;
 }
 
 .logoVectorizado {

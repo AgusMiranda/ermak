@@ -1,9 +1,12 @@
+
+
+/************BODY PREDETERMINADO************/
 body{
     margin-right: 0px;
     background-color: rgb(52, 120, 165);
 }
 
-
+/***header valores***/
 header{
     background-color: white;
 }
@@ -20,14 +23,21 @@ nav{
     }
 }
 
-
-footer{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    background-color: rgba(150, 148, 148, 0.562) !important;
+.divPrueba{
+    margin-right: 50px;
 }
+
+
+/****valores del carousel******/
+.d-block{
+    width: 100%;
+    max-height: 460px;
+}
+
+
+
+
+
 
 .presentacion{
     margin-top: 100px;
@@ -44,9 +54,7 @@ footer{
 }
 
 
-.divPrueba{
-    margin-right: 50px;
-}
+/*******seccion de presentacion**********/
 
 .cartasMaquinas{
     margin-top: 100px;
@@ -71,10 +79,19 @@ footer{
 }
 
 
-    .d-block{
-        width: 100%;
-        max-height: 460px;
-    }
+
+
+
+/*******valores del footer**********/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.747) !important;
+}
+
 
     .logoVectorizado{
         width: 150px;
