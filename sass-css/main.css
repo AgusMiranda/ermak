@@ -1,7 +1,7 @@
 /************BODY PREDETERMINADO************/
 body {
   margin-right: 0px;
-  background-color: #3478a5;
+  background-color: white;
 }
 
 /***header valores***/
@@ -13,7 +13,6 @@ nav {
   margin-top: 0%;
   width: 100%;
   height: 100px !important;
-  border-bottom: solid;
 }
 
 nav .nav-link {
@@ -24,18 +23,38 @@ nav .nav-link {
   margin-right: 50px;
 }
 
+.divPrueba a {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.divPrueba a:hover, .divPrueba a:focus {
+  background-size: 100% 2px;
+}
+
 /****valores del carousel******/
 .d-block {
   width: 100%;
   max-height: 460px;
 }
 
+.carrousel {
+  margin-top: 100px;
+}
+
+/*******seccion de presentacion**********/
 .presentacion {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 50px;
   margin-right: 50px;
-  border: black;
+  border: solid black;
   background-color: white;
 }
 
@@ -43,9 +62,14 @@ nav .nav-link {
   margin-top: 30px;
 }
 
-/*******seccion de presentacion**********/
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/******cartas de presentacion******/
 .cartasMaquinas {
-  margin-top: 100px;
+  margin-top: 400px;
   margin-bottom: 200px;
   margin-right: 20px;
   margin-left: 20px;

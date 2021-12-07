@@ -3,19 +3,19 @@
 /************BODY PREDETERMINADO************/
 body{
     margin-right: 0px;
-    background-color: rgb(52, 120, 165);
+    background-color: rgb(255, 255, 255);
 }
 
 /***header valores***/
 header{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
+
 
 nav{
     margin-top: 0%;
     width: 100%;
     height: 100px !important;
-    border-bottom: solid;
    
 
     .nav-link{
@@ -27,6 +27,18 @@ nav{
     margin-right: 50px;
 }
 
+.divPrueba a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.divPrueba a:hover, .divPrueba a:focus {
+    background-size: 100% 2px;
+}
 
 /****valores del carousel******/
 .d-block{
@@ -34,8 +46,13 @@ nav{
     max-height: 460px;
 }
 
+.carrousel{
+    margin-top: 100px;
+}
 
 
+
+/*******seccion de presentacion**********/
 
 
 
@@ -44,7 +61,7 @@ nav{
     margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
-    border: black;
+    border: solid black;
     background-color: white;
 
     .descripcion{
@@ -53,11 +70,15 @@ nav{
     }
 }
 
+h2{
+    text-align:center;
+    margin-top: 20px;
+}
 
-/*******seccion de presentacion**********/
+/******cartas de presentacion******/
 
 .cartasMaquinas{
-    margin-top: 100px;
+    margin-top: 400px;
     margin-bottom: 200px;
     margin-right: 20px;
     margin-left: 20px;
@@ -81,7 +102,6 @@ nav{
 
 
 
-
 /*******valores del footer**********/
 
 footer{
@@ -101,3 +121,11 @@ footer{
     .contacto-footer{
         margin-top: 20px;
     }
+
+
+
+
+
+
+
+   
