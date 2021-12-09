@@ -62,7 +62,7 @@ nav .nav-link {
 
 .presentacion .descripcion {
   margin-top: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   font-weight: 100;
 }
@@ -153,11 +153,12 @@ footer {
   border: solid thin black;
 }
 
-/*prueba*/
+/*prueba para index*/
 .displayBlock {
   width: 100%;
   position: relative;
   display: table;
+  margin-bottom: 100px;
 }
 
 .displayBlock .main-post {
@@ -165,6 +166,7 @@ footer {
   width: 67%;
   background-color: #eaeaea;
   display: table;
+  height: 456px !important;
 }
 
 .displayBlock .main-post figure {
@@ -178,6 +180,7 @@ footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #eaeaea;
+  margin-top: 60px;
 }
 
 img {
@@ -187,12 +190,12 @@ img {
 .displayBlock .main-post .text-aside {
   width: 50%;
   padding: 0 50px;
-  margin: 90px 0;
+  margin-top: 90px;
   background-color: #eaeaea;
   float: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-left: 1px solid #d8d3d3;
+  border-left: 1px solid #ffa2a2;
   padding-top: 10px;
   padding-bottom: 55px;
 }
@@ -231,7 +234,7 @@ img {
 }
 
 .displayBlock .post-secundario .container {
-  margin: 60px 0;
+  margin: 90px 0;
   padding: 10px 40px 55px 40px;
   width: 100%;
 }
