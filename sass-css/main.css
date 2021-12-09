@@ -3,7 +3,7 @@
 body {
   margin-right: 0px;
   background-color: white;
-  background-image: url(/imagenes/fondo.jpeg);
+  background-image: url(../imagenes/fondo.jpeg);
 }
 
 /***header valores***/
