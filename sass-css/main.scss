@@ -1,6 +1,8 @@
 
 
 /************BODY PREDETERMINADO************/
+
+
 body{
     margin-right: 0px;
     background-color: rgb(255, 255, 255);
@@ -18,11 +20,20 @@ nav{
     width: 100%;
     height: 100px !important;
    
-
-    .nav-link{
-        color: black;
-    }
 }
+
+.nav-link{
+    color: black;
+    font-family: 'open sans condensed';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-item{
+    padding: 30px;
+}
+
+
 
 .divPrueba{
     margin-right: 50px;
@@ -40,6 +51,9 @@ nav{
 .divPrueba a:hover, .divPrueba a:focus {
     background-size: 100% 2px;
 }
+
+
+
 
 /****valores del carousel******/
 .d-block{
@@ -67,9 +81,9 @@ nav{
 
     .descripcion{
         margin-top: 30px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'open sans condensed' ;
         font-size: 20px;
-        font-weight: 100;
+        font-weight: 300 ;
         
     }
 }
@@ -77,6 +91,8 @@ nav{
 h2{
     text-align:center;
     margin-top: 20px;
+    font-family: 'open sans condensed';
+    font-weight: 700;
 }
 
 /******cartas de presentacion******/
@@ -108,13 +124,13 @@ h2{
 
 /*******valores del footer**********/
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    background-color: rgb(128, 128, 128) !important;
-}
+// footer{
+//     display: flex;
+//     flex-direction: column;
+//     align-content: center;
+//     text-align: center;
+//     background-color: rgb(128, 128, 128) !important;
+// }
 
 
     .logoVectorizado{
@@ -122,9 +138,9 @@ footer{
         height: 150px;
     }
 
-    .contacto-footer{
-        margin-top: 20px;
-    }
+    // .contacto-footer{
+    //     margin-top: 20px;
+    // }
 
 
 
@@ -184,9 +200,9 @@ footer{
 .displayBlock .main-post{
     float: left;
     width: 67%;
-    background-color: #eaeaea;
+    background-color: hsl(200, 60, 94);
     display: table;
-    height: 456px !important;
+    height: 501.16px !important;
 }
 
 .displayBlock .main-post figure{
@@ -198,7 +214,7 @@ footer{
     float: left;
     padding: 50px 30px;
     box-sizing: border-box;
-    background-color: #eaeaea;
+    background-color: hsl(200, 60, 94);
     margin-top: 60px;
 }
 
@@ -210,10 +226,10 @@ img{
     width: 50%;
     padding: 0 50px;
     margin-top: 90px;
-    background-color: #eaeaea;
+    background-color: hsl(200, 60, 94);
     float: left;
     box-sizing: border-box;
-    border-left: 1px solid #ffa2a2;
+    border-left: 1px solid black;
     padding-top: 10px;
     padding-bottom: 55px;
 }
@@ -237,15 +253,16 @@ img{
 .displayBlock .main-post .text-aside a{
     padding: 5px 13px;
     font-weight: 600;
-    background-color: #ffffff;
+    background-color: hsl(200, 60, 50);
     border-radius: 4px;
     line-height: 16px;
+    color: white;
 }
 
 .displayBlock .post-secundario{
     float: left;
     width: 33%;
-    background-color: #fef5ee;
+    background-color: hsl(200, 60, 90);
     display: table;
     box-sizing: border-box;
 }
@@ -262,7 +279,7 @@ img{
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 35px;
-    color: #ea5612;
+    color: black;
 }
 
 .displayBlock .post-secundario p{
@@ -276,9 +293,74 @@ img{
 .displayBlock .post-secundario a{
     padding: 5px 13px;
     font-weight: 600;
-    background-color: #ea5612;
+    background-color: hsl(200, 60, 50);
     border-radius: 4px;
     line-height: 16px;
     color: #ffffff;
 }
 
+/******prueba de footer*****/
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+
+.col-md-4{
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+footer h6{
+    font-size: 14px;
+    color: white;
+    text-align: start;
+    margin-left: 100px;
+    text-decoration: underline; 
+}
+
+h5{
+    font-size: 14px;
+    color: white;
+    }
+
+footer ul li{
+    color: white;
+    text-align: start;
+    margin-left: 100px;
+}
+
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    --bs-gutter-x: 0px;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: hsl(0, 0, 12) !important;
+    margin: 0px;
+    display: flex;
+    text-align: center;
+ }
+
+.contenedor{
+    margin-top: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.iconos{
+    height: 20px;
+    width: 20px;
+}
