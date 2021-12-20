@@ -100,13 +100,15 @@ h2{
 .cartasMaquinas{
     margin-top: 200px;
     margin-bottom: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    width: auto;
     
     .card-img-top{
         width: 300px;
         height: 300px;
-        margin-left: 70px;
+        margin-left:0px;
         margin-top: 10px;
     }
 }
@@ -115,12 +117,9 @@ h2{
     text-align: center;
 }
 
-.fotoValor{
-    margin:30px;
-}
 
 section .seccionEquipos{
-    width: 30em;
+    width: 25em;
     margin-left: auto;
     margin-right: auto;
 
@@ -134,25 +133,6 @@ section  h1{
 
 
 
-/*******valores del footer**********/
-
-// footer{
-//     display: flex;
-//     flex-direction: column;
-//     align-content: center;
-//     text-align: center;
-//     background-color: rgb(128, 128, 128) !important;
-// }
-
-
-    .logoVectorizado{
-        width: 150px;
-        height: 150px;
-    }
-
-    // .contacto-footer{
-    //     margin-top: 20px;
-    // }
 
 
 
@@ -313,7 +293,7 @@ img{
 
 /******prueba de footer*****/
 
-ul{
+div ul{
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -321,7 +301,8 @@ ul{
 
 
 
-.col-md-4{
+
+div .col-md-4{
     flex: 33.33%;
     max-width: 33.33%;
     padding: 0px;
@@ -332,38 +313,39 @@ footer h6{
     font-size: 14px;
     color: white;
     text-align: start;
-    margin-left: 100px;
+    margin-left: 80px;
     text-decoration: underline; 
 }
 
 h5{
-    font-size: 14px;
+    font-size: 14px !important;
     color: white;
     }
 
 footer ul li{
     color: white;
     text-align: start;
-    margin-left: 100px;
+    margin-left: 80px;
+   
 }
 
 footer .row{
     display: flex;
     flex-wrap: wrap;
-    --bs-gutter-x: 0px;
+   
 }
 
 footer {
     height: 300px;
-    width: 100%;
     background-color: hsl(0, 0, 12) !important;
-    margin: 0px;
+    margin-top: 100px;
     display: flex;
     text-align: center;
  }
 
 .contenedor{
     margin-top: 10px;
+    
 }
 
 footer a{
@@ -375,4 +357,28 @@ footer a{
 .iconos{
     height: 20px;
     width: 20px;
+}
+
+.logoVectorizado{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+/**boton de whatsapp**/
+
+.btn-whatsapp {
+    display:block;
+    width:50px;
+    height:50px;
+    color:#fff;
+    position: fixed;
+    right:20px;
+    bottom:30px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
 }
