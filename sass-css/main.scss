@@ -4,9 +4,9 @@
 
 
 body{
-    margin-right: 0px;
+    margin: 0px;
     background-color: rgb(255, 255, 255);
-    background-image: url(../imagenes/fondo.jpeg);
+    // background-image: url(../imagenes/fondo.jpeg);
 }
 
 /***header valores***/
@@ -22,10 +22,12 @@ nav{
    
 }
 
-.nav-link{
+
+
+.navbar-light .navbar-nav .nav-link{
     color: black;
-    font-family: 'open sans condensed';
-    font-weight: 700;
+    font-family: 'Roboto';
+    font-weight: bold;
     font-size: 20px;
 }
 
@@ -67,50 +69,111 @@ nav{
 
 
 
-/*******seccion de presentacion**********/
+/*******seccion de presentacion index**********/
 
 
 
 .presentacion{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 230px;
+    margin-bottom: 230px;
     margin-left: 50px;
     margin-right: 50px;
-    border: solid thin black;
     background-color: white;
 
-    .descripcion{
-        margin-top: 30px;
-        font-family: 'open sans condensed' ;
-        font-size: 20px;
-        font-weight: 300 ;
-        
-    }
+   
 }
 
-h2{
-    text-align:center;
-    margin-top: 20px;
-    font-family: 'open sans condensed';
+.descripcion{
+    margin-top: 30px;
+    font-family: 'Roboto' ;
+    font-size: 20px;
+    font-weight: 300 ;
+    
+}
+
+
+h4{
+    text-align: center;
+    font-family: 'Roboto';
     font-weight: 700;
+
 }
 
-/******cartas de presentacion******/
+
+
+.ulBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+}
+
+li .btnQuieneSomos{
+    border-radius: 15px;
+    background-color: hsl(207°, 40%, 45%);
+    padding: 10px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+    text-decoration: none;
+    color: white ;
+}
+
+li .btnServicios{
+    border-radius: 15px;
+    background-color: hsl(207°, 40%, 45%);
+    padding: 10px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 30px;
+    color: white;
+}
+
+
+/******Seccion productos******/
 
 .cartasMaquinas{
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 200px;
     margin-right: auto;
     margin-left: auto;
     padding: 0px;
-    width: auto;
-    
+    width: 100%;
+
     .card-img-top{
         width: 300px;
         height: 300px;
         margin-left:0px;
         margin-top: 10px;
     }
+    
+   
+}
+
+.seccionEquiposRepuesto{
+    margin: 0px;
+    width: 100%;
+}
+
+
+
+.card-img-top:hover{
+    
+    opacity: 0.5;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.card-text{
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    font-weight: 300;
+
+   
 }
 
 .card-title{
@@ -133,7 +196,41 @@ section  h1{
 
 
 
+section h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 700;
+}
 
+.parallaxProductos{
+    position: relative;
+    background: url(../imagenes/carousel/portada-redi.jpg) fixed no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 300px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-family: 'Roboto';
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 3px 2px #406070;
+        
+    }
+}
+
+
+.card{
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -141,44 +238,108 @@ section  h1{
     /***prueba parallax***/
 
 
-    .parallax {
-        position: relative;
-    background: url(/imagenes/carousel/portada1.png) no-repeat fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 300px;
-    margin-top: 300px;
+    //  .parallax {
+    //      position: relative;
+    //  background: url(/imagenes/carousel/portada1.png) no-repeat fixed;
+    //  background-position: center center;
+    //  -webkit-background-size: cover;
+    //  -moz-background-size: cover;
+    //  -o-background-size: cover;
+    //  background-size: cover;
+    //  min-height: 300px;
+    //  margin-top: 300px;
+    // }
+
+    // .titulo-nosotros{
+    // color: rgb(0, 0, 0);
+    // font-size: 1rem;
+    // text-align: center;
+    // margin: 0 auto;
+    // width: 800px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // margin-left: -400px;
+    // opacity: 0.8;}
+
+
+    .parallax{
+        margin-top: 9rem;
+        
+        .col-3 img{
+            margin-top: 0px;
+        }
     }
 
-    .titulo-nosotros{
-    color: #fff;
-    font-size: 55px;
-    text-align: center;
-    margin: 0 auto;
-    width: 800px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -400px;
-    opacity: 0.8;}
+        .nosotros{
+            margin: 10.71rem 7.14rem 2.85rem 7.14rem;
+            
+            .titulo-nosotros{
+                font-size: 1.2rem;
+                font-family: 'Roboto';
+            }
+        }
+
+
+
+    .sobreNosotros{
+      position: relative;
+      background: url(../imagenes/varias/fotoSaludo.png) no-repeat center;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+              
+      
+      h1{
+          color: white;
+          font-family: 'Open Sans Condensed';
+          font-weight: 700;
+      }
+    }
+
+    .img-parallax{
+        margin: 20px;
+
+    }
+
+ 
+
+    h1{
+            font-size: 40px;
+            color: black;
+            margin-top: 200px;
+            margin-bottom: 200px;
+
+        }
 
    
 
-    /*pequeña prueba para parallax*/
-
-    .img-prueba{
-        height: 400px;
-        width: 400px;
+        .miniParallax{
+    position: relative;
+     background: url(../imagenes/varias/zegla.jpg) no-repeat fixed;
+     background-position: center center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     min-height: 300px;
+     margin-top: 100px;
+     transform: translate(0%, -6.91571%) translate3d(0px, 0px, 0px)
     }
 
-    .nosotros{
-        margin: 100px 200px 100px 200px;
-        border: solid thin black;
 
-    }
+    
+
+
+
+
+
 
 /*prueba para index*/
 
@@ -210,8 +371,14 @@ section  h1{
     margin-top: 60px;
 }
 
-img{
-    width: 100%;
+main section article figure img{
+    width: 200px;
+
+}
+
+main section article figure{
+    justify-content: center;
+    align-items: center;
 }
 
 .displayBlock .main-post .text-aside{
@@ -245,10 +412,11 @@ img{
 .displayBlock .main-post .text-aside a{
     padding: 5px 13px;
     font-weight: 600;
-    background-color: hsl(200, 60, 50);
+    background-color: hsl(207°, 40%, 45%);
     border-radius: 4px;
     line-height: 16px;
     color: white;
+    text-decoration: none;
 }
 
 .displayBlock .post-secundario{
@@ -257,6 +425,7 @@ img{
     background-color: hsl(200, 60, 90);
     display: table;
     box-sizing: border-box;
+    height: 501.16px !important;
 }
 
 .displayBlock .post-secundario .container{
@@ -285,10 +454,11 @@ img{
 .displayBlock .post-secundario a{
     padding: 5px 13px;
     font-weight: 600;
-    background-color: hsl(200, 60, 50);
+    background-color: hsl(207°, 40%, 45%);
     border-radius: 4px;
     line-height: 16px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 /******prueba de footer*****/
@@ -306,14 +476,16 @@ div ul{
     width: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: hsl(210°, 0%, 11%);
+    background-color: hsl(0°, 3%, 7%);
 
-    #derechos{
-        margin-top: 15px !important;
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-    }
+    
+}
+
+#derechos{
+    margin-top: 15px !important;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
 }
 
 
@@ -440,9 +612,8 @@ ul .row{
     padding: 50px;
 
 }
-h2{
-    text-align: start;
-}
+
+
 
 
 
