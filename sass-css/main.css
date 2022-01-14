@@ -96,6 +96,16 @@ li .btnQuieneSomos {
   font-size: 25px;
   text-decoration: none;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 39px;
+  background: #4577a1;
+  -webkit-box-shadow: 5px -5px 1px #2e4f6a;
+          box-shadow: 5px -5px 1px #2e4f6a;
+}
+
+li .btnQuieneSomos:hover {
+  background: black;
 }
 
 li .btnServicios {
@@ -108,12 +118,23 @@ li .btnServicios {
   text-decoration: none;
   margin: 30px;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 39px;
+  background: #4577a1;
+  -webkit-box-shadow: 5px -5px 1px #2e4f6a;
+          box-shadow: 5px -5px 1px #2e4f6a;
+}
+
+li .btnServicios:hover {
+  background: black;
+  -webkit-transform: scaleX(-5px);
+          transform: scaleX(-5px);
 }
 
 /******Seccion productos******/
 .cartasMaquinas {
   margin-top: 100px;
-  margin-bottom: 200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0px;
@@ -125,6 +146,11 @@ li .btnServicios {
   height: 300px;
   margin-left: 0px;
   margin-top: 10px;
+}
+
+.cartasMaquinas .row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .seccionEquiposRepuesto {
@@ -187,7 +213,7 @@ section h2 {
   font-family: 'Roboto';
   color: white;
   font-weight: bold;
-  text-shadow: 2px 3px 2px #406070;
+  text-shadow: 2px 3px 2px #347c9d;
 }
 
 .card {
@@ -197,6 +223,19 @@ section h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.hoverComun {
+  padding: 1px !important;
+}
+
+.separador {
+  background: url(../imagenes/fondo.jpeg) fixed repeat;
+  height: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 3px;
+  position: relative;
 }
 
 /***prueba parallax***/
@@ -385,6 +424,37 @@ main section article figure {
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
+}
+
+/**MEJORAS PT 1***/
+.seccionEslogan {
+  background-image: url(../imagenes/carousel/portada2.jpg);
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.seccionEslogan h6 {
+  color: white;
+  font-size: 40px;
+}
+
+/**mejoras pt2**/
+.productosDestacados {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.imgDestacado {
+  width: 300px;
+  height: 300px;
 }
 
 /******prueba de footer*****/
