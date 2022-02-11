@@ -15,6 +15,7 @@ header{
 }
 
 
+
 nav{
     margin-top: 0%;
     width: 100%;
@@ -34,6 +35,12 @@ nav{
 .nav-item{
     padding: 30px;
 }
+
+.navbar-brand{
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.467));
+    transition: 1ms;
+}
+
 
 
 
@@ -171,6 +178,7 @@ li .btnServicios:hover{
         height: 300px;
         margin-left:0px;
         margin-top: 10px;
+        // filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
     }
     
    .row{
@@ -511,7 +519,7 @@ main section article figure{
 
 
 .seccionEslogan{
-    background-image: url(../imagenes/carousel/portada2.jpg);
+    background-image: url(/imagenes/varias/botellita-hd_ccexpress.jpeg) ;
     height: 300px;
     display: flex;
     align-items: center;
@@ -520,6 +528,7 @@ main section article figure{
     h6{
         color: white;
         font-size: 40px;
+        text-shadow: 3px 2px black;
     }
 }
 
@@ -529,15 +538,30 @@ main section article figure{
 
 
 .productosDestacados{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+        text-align: center;
+        margin: 10px;
+    }
 
     
 }
 
+
+
+
+
+
 .imgDestacado{
     width: 300px;
     height: 300px;
+    margin: 0px 100px;
+    filter: drop-shadow(5px 5px 10px #666);
 
 }
 
@@ -668,6 +692,8 @@ ul .row{
 
 .fachero{
     margin-top: 200px;
+    width: 300px;
+    
 }
 
 
@@ -700,5 +726,64 @@ ul .row{
 
 
 
+/*****CARRUSEL CLIENTES****/
 
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 60s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 7);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+        margin: 0px 20px;
+        opacity: 0.3;
+
+	}
+}
 

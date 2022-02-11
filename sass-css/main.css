@@ -26,6 +26,13 @@ nav {
   padding: 30px;
 }
 
+.navbar-brand {
+  -webkit-filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.467));
+          filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.467));
+  -webkit-transition: 1ms;
+  transition: 1ms;
+}
+
 .divPrueba {
   margin-right: 50px;
 }
@@ -428,7 +435,7 @@ main section article figure {
 
 /**MEJORAS PT 1***/
 .seccionEslogan {
-  background-image: url(../imagenes/carousel/portada2.jpg);
+  background-image: url(/imagenes/varias/botellita-hd_ccexpress.jpeg);
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,17 +451,35 @@ main section article figure {
 .seccionEslogan h6 {
   color: white;
   font-size: 40px;
+  text-shadow: 3px 2px black;
 }
 
 /**mejoras pt2**/
 .productosDestacados {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productosDestacados h3 {
+  text-align: center;
+  margin: 10px;
 }
 
 .imgDestacado {
   width: 300px;
   height: 300px;
+  margin: 0px 100px;
+  -webkit-filter: drop-shadow(5px 5px 10px #666);
+          filter: drop-shadow(5px 5px 10px #666);
 }
 
 /******prueba de footer*****/
@@ -568,6 +593,7 @@ ul .row {
 /****ACCORDION*****/
 .fachero {
   margin-top: 200px;
+  width: 300px;
 }
 
 /******seccion de contacto******/
@@ -585,5 +611,76 @@ ul .row {
 .contenedorInformacion {
   margin-top: 0px;
   padding: 50px;
+}
+
+/*****CARRUSEL CLIENTES****/
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: white;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::before, .slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 60s linear infinite;
+          animation: scroll 60s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(250px * 7);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  margin: 0px 20px;
+  opacity: 0.3;
 }
 /*# sourceMappingURL=main.css.map */
