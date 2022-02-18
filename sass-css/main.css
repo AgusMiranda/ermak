@@ -27,8 +27,6 @@ nav {
 }
 
 .navbar-brand {
-  -webkit-filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.467));
-          filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.467));
   -webkit-transition: 1ms;
   transition: 1ms;
 }
@@ -112,7 +110,7 @@ li .btnQuieneSomos {
 }
 
 li .btnQuieneSomos:hover {
-  background: black;
+  background: #2e4f6a;
 }
 
 li .btnServicios {
@@ -129,12 +127,12 @@ li .btnServicios {
   transition: 0.5s;
   border-radius: 39px;
   background: #4577a1;
-  -webkit-box-shadow: 5px -5px 1px #2e4f6a;
-          box-shadow: 5px -5px 1px #2e4f6a;
+  -webkit-box-shadow: 5px -4px 1px #2e4f6a;
+          box-shadow: 5px -4px 1px #2e4f6a;
 }
 
 li .btnServicios:hover {
-  background: black;
+  background: #2e4f6a;
   -webkit-transform: scaleX(-5px);
           transform: scaleX(-5px);
 }
@@ -200,7 +198,7 @@ section h2 {
 
 .parallaxProductos {
   position: relative;
-  background: url(../imagenes/carousel/portada-redi.jpg) fixed no-repeat;
+  background: url(../imagenes/varias/zegla.jpg) fixed no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: 300px;
@@ -220,7 +218,7 @@ section h2 {
   font-family: 'Roboto';
   color: white;
   font-weight: bold;
-  text-shadow: 2px 3px 2px #347c9d;
+  text-shadow: 2px 3px 2px black;
 }
 
 .card {
@@ -261,6 +259,10 @@ section h2 {
 .nosotros .titulo-nosotros {
   font-size: 1.2rem;
   font-family: 'Roboto';
+}
+
+.compromiso {
+  text-align: end !important;
 }
 
 .sobreNosotros {
@@ -458,9 +460,8 @@ main section article figure {
 .productosDestacados {
   margin-top: 200px;
   margin-bottom: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -472,14 +473,24 @@ main section article figure {
 .productosDestacados h3 {
   text-align: center;
   margin: 10px;
+  -webkit-filter: drop-shadow(2px 2px 2px black);
+          filter: drop-shadow(2px 2px 2px black);
+}
+
+.columnaDestacado {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: solid 1px #1f8bc1;
+  margin: 10px;
+  background: url(/imagenes/fondo.jpeg);
 }
 
 .imgDestacado {
   width: 300px;
   height: 300px;
-  margin: 0px 100px;
-  -webkit-filter: drop-shadow(5px 5px 10px #666);
-          filter: drop-shadow(5px 5px 10px #666);
+  margin: 20px 100px;
+  -webkit-filter: drop-shadow(5px 5px 10px black);
+          filter: drop-shadow(5px 5px 10px black);
 }
 
 /******prueba de footer*****/
@@ -614,6 +625,14 @@ ul .row {
 }
 
 /*****CARRUSEL CLIENTES****/
+/*solo para el nosotros.html*/
+.tituloClientes {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+/****************************/
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
