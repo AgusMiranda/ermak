@@ -446,7 +446,7 @@ main section article figure {
 
 /**MEJORAS PT 1***/
 .seccionEslogan {
-  background-image: url(/imagenes/varias/botellita-hd_ccexpress.jpeg);
+  background-image: url(../imagenes/varias/botellita-hd_ccexpress.jpeg);
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,7 +491,7 @@ main section article figure {
       flex-wrap: wrap;
   border: solid 1px #1f8bc1;
   margin: 10px;
-  background: url(/imagenes/fondo.jpeg);
+  background-image: url(../imagenes/fondo.jpeg);
 }
 
 .imgDestacado {

@@ -532,7 +532,7 @@ main section article figure{
 
 
 .seccionEslogan{
-    background: url(../imagenes/varias/botellita-hd_ccexpress.jpeg) ;
+    background-image: url(../imagenes/varias/botellita-hd_ccexpress.jpeg);
     height: 300px;
     display: flex;
     align-items: center;
@@ -570,7 +570,7 @@ main section article figure{
     flex-wrap: wrap ;
     border: solid 1px hsl(200°, 72%, 44%);
     margin: 10px;
-    background: url(../imagenes/fondo.jpeg)
+    background-image: url(../imagenes/fondo.jpeg);
     
     
 
