@@ -105,6 +105,11 @@ h4{
 
 }
 
+.fotoValor{
+    filter: drop-shadow(10px 12px 6px black);
+    
+}
+
 
 
 .ulBtn{
@@ -185,6 +190,11 @@ li .btnServicios:hover{
     margin-left:0px;
    }
 
+}
+
+
+.divMaquinas{
+    width: 90% !important;
 }
 
 
@@ -274,6 +284,7 @@ section h2{
 
 .hoverComun{
     padding: 1px !important;
+    
 }
 
 .separador{
@@ -549,7 +560,7 @@ main section article figure{
     h3{
         text-align: center;
         margin: 10px;
-        filter: drop-shadow(2px 2px 2px black);
+        filter: drop-shadow(2px 2bpx 2px black);
     }
 
     
@@ -573,7 +584,7 @@ main section article figure{
     height: 300px;
     margin: 20px 100px;
     filter: drop-shadow(5px 5px 10px black);
-    ;
+    
 
 }
 
@@ -807,3 +818,11 @@ $animationSpeed: 60s;
 	}
 }
 
+/****enjuagadoras****/
+
+.carrouselEnjuagadora{
+    margin-top: 1000px;
+    margin-bottom: 300px;
+    margin-left: 150px;
+    width: 50%;
+}

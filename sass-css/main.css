@@ -82,6 +82,11 @@ h4 {
   font-weight: 700;
 }
 
+.fotoValor {
+  -webkit-filter: drop-shadow(10px 12px 6px black);
+          filter: drop-shadow(10px 12px 6px black);
+}
+
 .ulBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,6 +161,10 @@ li .btnServicios:hover {
 .cartasMaquinas .row {
   margin-right: 0px;
   margin-left: 0px;
+}
+
+.divMaquinas {
+  width: 90% !important;
 }
 
 .seccionEquiposRepuesto {
@@ -473,8 +482,8 @@ main section article figure {
 .productosDestacados h3 {
   text-align: center;
   margin: 10px;
-  -webkit-filter: drop-shadow(2px 2px 2px black);
-          filter: drop-shadow(2px 2px 2px black);
+  -webkit-filter: drop-shadow(2px 2bpx 2px black);
+          filter: drop-shadow(2px 2bpx 2px black);
 }
 
 .columnaDestacado {
@@ -701,5 +710,13 @@ ul .row {
   width: 250px;
   margin: 0px 20px;
   opacity: 0.3;
+}
+
+/****enjuagadoras****/
+.carrouselEnjuagadora {
+  margin-top: 1000px;
+  margin-bottom: 300px;
+  margin-left: 150px;
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */
